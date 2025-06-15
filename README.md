@@ -5,6 +5,7 @@
 디자인과 기능은 추후에 업데이트될 예정입니다 :)
 
 👉 GitHub 저장소: [https://github.com/msKangHNU/msKangHNU](https://github.com/msKangHNU/msKangHNU)  
+
 👉 홈페이지 주소: [https://mskanghnu.github.io/msKangHNU](https://mskanghnu.github.io/msKangHNU)<br><br><br>
 
 ## 1. 섹션별 스크롤 애니메이션
