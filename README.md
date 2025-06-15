@@ -4,7 +4,8 @@
 웹 스크립트 수업을 통해 배우고, 꾸며보고, 나만의 스타일을 적용해보는 실험 공간입니다.  
 디자인과 기능은 추후에 업데이트될 예정입니다 :)
 
-👉 GitHub 저장소: [https://github.com/msKangHNU/msKangHNU](https://github.com/msKangHNU/msKangHNU)<br><br><br>
+👉 GitHub 저장소: [https://github.com/msKangHNU/msKangHNU](https://github.com/msKangHNU/msKangHNU)
+👉 홈페이지 주소: [https://mskanghnu.github.io/msKangHNU](https://mskanghnu.github.io/msKangHNU)<br><br><br>
 
 ## 1. 섹션별 스크롤 애니메이션
 
