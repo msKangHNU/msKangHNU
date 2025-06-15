@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>홈페이지 만들기</title>
+  <link rel="stylesheet" href="MyPage.css" />
+  <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+</head>
+<body>
+  <div class="toggle-mode" onclick="toggleDarkMode()">🌗 다크모드</div>
+
+  <section class="intro">
+    <div class="univ">한남대학교</div>
+    <h1>20202963 강민수</h1>
+    <div class="major">스마트융합대학 컴퓨터공학과<br>웹스크립트프로그래밍</div>
+  </section>
+
+  <section class="cards">
+    <div class="card" onclick="openModal('skills')">
+      <img src="https://cdn-icons-png.flaticon.com/512/2721/2721290.png" alt="My Skills" width="100" height="100">
+      <h2>My Skills</h2>
+    </div>
+    <div class="card" onclick="openModal('projects')">
+      <img src="https://cdn-icons-png.flaticon.com/512/715/715676.png" alt="Projects" width="100" height="100">
+      <h2>Projects</h2>
+    </div>
+    <div class="card" onclick="openModal('job')">
+      <img src="https://cdn-icons-png.flaticon.com/512/3135/3135715.png" alt="Desired Job" width="100" height="100">
+      <h2>Desired Job</h2>
+    </div>
+  </section>
+
+  <section class="extra-section">
+    <h2>✨ About This Portfolio</h2>
+    <p>이 페이지는 HTML과 CSS, JavaScript만으로 구현된 포트폴리오입니다.<br>
+    웹 스크립트 수업을 통해 배우고, 꾸며보고, 나만의 스타일을 적용해보는 실험 공간이에요.<br>
+    디자인과 기능은 추후에 업데이트될 예정입니다 :)</p>
+  </section>
+
+  <div id="modal" class="modal" onclick="closeModal(event)">
+    <div class="modal-content" id="modalContent" onclick="event.stopPropagation();">
+      <button class="close-btn" onclick="closeModal()">&times;</button>
+      <div id="modalBody"></div>
+    </div>
+  </div>
+
+  <div class="project-overlay" id="projectOverlay">
+    <div class="project-card">
+      <button class="close-btn" onclick="closeProjectCard()">✖</button>
+      <div class="project-title">제목</div>
+      <div class="project-desc">설명</div>
+      <div class="tags"></div>
+      <div class="timeline"></div>
+      <div class="media-preview"></div>
+    </div>
+  </div>
+
+  <div class="job-overlay" id="jobOverlay">
+    <div id="jobPopup" class="job-popup">
+      <button class="close-btn" onclick="closeJobPopup()">✖</button>
+      <div class="job-card" id="backendCard">
+        💻 Backend Developer
+        <div class="job-description">
+          - 클라이언트 요청 처리용 API 개발<br>
+          - 데이터 저장 / 조회를 위한 DB 연동 및 쿼리 작성<br>
+          - 회원가입 / 로그인 등 인증 처리<br>
+          - 에러 처리 및 서버 로그 관리<br>
+          - 배포 및 서버 유지보수
+        </div>
+      </div>
+      <div class="job-card" id="gameCard">
+        🎮 Game Developer
+        <div class="job-description">
+          - Unity 기반 게임 시스템 및 UI 개발<br>
+          - 캐릭터 조작 및 전투 로직 구현<br>
+          - Scene 전환, 데이터 저장 등 게임 흐름 관리<br>
+          - 사용자 입력 대응 및 오브젝트 동작 제어<br>
+          - 게임 오류 디버깅 및 성능 최적화
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <script src="MyPage.js"></script>
+</body>
+</html>
