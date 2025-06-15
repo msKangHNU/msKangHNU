@@ -20,6 +20,27 @@ body {
   align-items: center;
   min-height: 100vh;
   transition: color 0.5s ease;
+  scrollbar-width: thin;
+  scrollbar-color: rgba(255, 255, 255, 0.3) transparent;
+  -ms-overflow-style: auto;
+}
+
+body::-webkit-scrollbar {
+  width: 6px;
+}
+
+body::-webkit-scrollbar-track {
+  background: transparent;
+}
+
+body::-webkit-scrollbar-thumb {
+  background-color: rgba(255, 255, 255, 0.15);
+  border-radius: 10px;
+  transition: background-color 0.3s ease;
+}
+
+body:hover::-webkit-scrollbar-thumb {
+  background-color: rgba(255, 255, 255, 0.3);
 }
 
 body.dark-mode {
@@ -309,6 +330,14 @@ ul li {
   transform: scale(0.8);
   opacity: 0;
   transition: transform 0.4s ease, opacity 0.4s ease;
+  overflow-y: auto;
+  scrollbar-width: none;
+  -ms-overflow-style: none;
+  max-height: 80vh;
+}
+
+.project-card::-webkit-scrollbar {
+  display: none;
 }
 
 .project-overlay.show .project-card {
